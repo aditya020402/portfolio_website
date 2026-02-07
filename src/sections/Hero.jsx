@@ -1,9 +1,5 @@
 import { Button } from "@/components/Button";
 import profilePic from "@/assets/profile.jpeg";
-<<<<<<< HEAD
-=======
-import resume from "@/assets/Resume.pdf";
->>>>>>> 90c613f05c06ac0df68fab62b81549752c37a727
 import {
   ArrowRight,
   ChevronDown,
@@ -110,11 +106,7 @@ export const Hero = () => {
               <Button size="lg">
                 <a href="#contact">Contact Me <ArrowRight className="inline w-5 h-5" /></a> 
               </Button>
-<<<<<<< HEAD
               <AnimatedBorderButton href="/Resume.pdf" download="Resume.pdf">
-=======
-              <AnimatedBorderButton href={resume} download>
->>>>>>> 90c613f05c06ac0df68fab62b81549752c37a727
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton>
