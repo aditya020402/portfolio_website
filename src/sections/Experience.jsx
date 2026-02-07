@@ -1,7 +1,7 @@
 const experiences = [
     {
     period: "2025 July - Present",
-    role: "AI Software Engineering",
+    role: "AI Software Engineer",
     company: "UBS",
     points: [
       "Built a multi-agent architecture using LangGraph to automate incident triage, log analysis, runbook execution, and remediation recommendations.",
@@ -14,8 +14,8 @@ const experiences = [
     current: true,
   },
   {
-    period: "2025 January - 2025 July",
-    role: "Software Engineering",
+    period: "2024 August - 2025 July",
+    role: "Software Engineer",
     company: "UBS",
     points: [
       "Architected and developed Ecube, an automated incident classification and clustering platform to identify similar incidents.",
@@ -30,8 +30,8 @@ const experiences = [
     current: true,
   },
   {
-    period: "2024 August - 2024 January",
-    role: "Software Engineering Intern",
+    period: "2024 January - 2024 July",
+    role: "Software Engineer Intern",
     company: "UBS",
     points: [
       "Developed a bulk blob cleanup utility using Azure Blob Storage, reducing storage consumption by 20–30% with measurable cost savings.",
@@ -44,7 +44,7 @@ const experiences = [
   },
   {
     period: "2023 May - 2023 July",
-    role: "Software Engineering Intern",
+    role: "Software Engineer Summer Intern",
     company: "UBS",
     points: [
       "Contributed to sensitive data scanning (CID) workflows, gaining end-to-end exposure to application architecture and security considerations.",
@@ -141,9 +141,12 @@ export const Experience = () => {
                     </span>
                     <h3 className="text-xl font-semibold mt-2">{exp.role}</h3>
                     <p className="text-muted-foreground">{exp.company}</p>
-                    <ul className="text-sm text-muted-foreground mt-4 space-y-2 list-disc list-inside">
+                    <ul className="text-sm text-muted-foreground mt-4 space-y-3 text-left">
                       {exp.points.map((point, pointIdx) => (
-                        <li key={pointIdx}>{point}</li>
+                        <li key={pointIdx} className="flex gap-2">
+                          <span className="text-primary flex-shrink-0">•</span>
+                          <span>{point}</span>
+                        </li>
                       ))}
                     </ul>
                     <div
