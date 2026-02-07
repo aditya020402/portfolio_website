@@ -1,5 +1,6 @@
 import { Button } from "@/components/Button";
 import profilePic from "@/assets/profile.jpeg";
+import hero from "@/assets/hero.jpg";
 import {
   ArrowRight,
   ChevronDown,
@@ -47,7 +48,7 @@ export const Hero = () => {
       {/* Bg */}
       <div className="absolute inset-0">
         <img
-          src={profilePic}
+          src={hero}
           alt="Hero image"
           className="w-full h-full object-cover opacity-40"
         />
